@@ -1,9 +1,166 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uttam | Frontend Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #1e293b;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #38bdf8;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello CI/CD Demo version 2 on Linux VM </h1>
-  <h2>Simple cd </h2>
-<p>Auto-deployed using GitHub Actions Runner</p>
+
+  <header>
+    <h1>Uttam</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm <span>Frontend Developer</span></h2>
+    <p>I build responsive and modern websites using HTML, CSS & JavaScript.</p>
+    <button class="btn">View My Work</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate developer currently studying BSc CSIT and working on real-world frontend projects.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>E-commerce Website</h3>
+        <p>Built a responsive Shopify dropshipping store.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Page</h3>
+        <p>Modern product landing page with flexbox and grid.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio</h3>
+        <p>Personal portfolio website with animations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: uttam@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Uttam Koirala | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
